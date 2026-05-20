@@ -1,0 +1,149 @@
+.motors-section-light {
+  background: radial-gradient(circle at left center, rgba(14, 165, 233, 0.05) 0%, transparent 60%);
+  position: relative;
+  background-color: #F1F5F9; /* slightly different background for contrast */
+}
+
+.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+.motors-logo-bg {
+  background: #ffffff;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  box-shadow: 0 20px 40px -10px rgba(14, 165, 233, 0.15);
+}
+
+.tech-highlight-banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 24px;
+  margin-bottom: 5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.tech-stat {
+  flex: 1;
+  text-align: center;
+}
+
+.tech-stat h4 {
+  font-size: 2.5rem;
+  color: var(--brand-motors);
+  margin-bottom: 0.5rem;
+}
+
+.tech-stat p {
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+.tech-stat.divider {
+  border-left: 1px solid rgba(0,0,0,0.05);
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.motors-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.product-category-card {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.product-category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+.cat-image {
+  height: 200px;
+  background: #E2E8F0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cat-image::after {
+  content: '🌊';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  opacity: 0.1;
+}
+
+.placeholder-ind::after { content: '⚙️'; }
+.placeholder-dom::after { content: '🏠'; }
+
+.cat-content {
+  padding: 2.5rem;
+}
+
+.cat-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.cat-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.text-link {
+  color: var(--brand-motors);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 968px) {
+  .tech-highlight-banner {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .tech-stat {
+    min-width: 40%;
+  }
+  .tech-stat.divider {
+    border-left: none;
+  }
+  .motors-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reverse-layout {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .motors-product-grid {
+    grid-template-columns: 1fr;
+  }
+  .tech-stat {
+    min-width: 100%;
+  }
+  .tech-highlight-banner {
+    padding: 1.5rem;
+  }
+}
