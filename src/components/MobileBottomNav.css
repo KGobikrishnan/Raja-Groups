@@ -1,0 +1,166 @@
+/* Mobile Bottom Navbar Floating Base Styles */
+.mobile-bottom-nav-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 1.25rem calc(1.25rem + env(safe-area-inset-bottom, 0px)) 1.25rem;
+  z-index: 1000;
+  pointer-events: none; /* Let clicks pass through outside navbar */
+  display: none; /* Hidden on desktop */
+  justify-content: center;
+}
+
+.mobile-bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  height: 68px;
+  padding: 0 0.75rem;
+  border-radius: 20px;
+  pointer-events: auto; /* Active interactions inside the bar */
+  background: rgba(11, 15, 25, 0.82) !important;
+  backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(30, 41, 59, 0.7) !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 
+              0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  position: relative;
+  overflow: visible;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Nav Item Styling */
+.mobile-nav-item {
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 18%;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  gap: 4px;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-svg-icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--text-secondary);
+  transition: stroke 0.3s ease, transform 0.3s ease;
+}
+
+.nav-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+/* Active State Configurations */
+.mobile-nav-item.active {
+  color: var(--text-primary);
+}
+
+.mobile-nav-item.active .icon-wrapper {
+  transform: translateY(-8px) scale(1.15);
+}
+
+.mobile-nav-item.active .nav-label {
+  color: var(--text-primary);
+  font-weight: 800;
+  transform: translateY(-2px);
+}
+
+/* Specific Page Glowing Signatures */
+.mobile-nav-item.active-home.active .nav-svg-icon {
+  stroke: #ffffff;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+}
+
+.mobile-nav-item.active-solar.active .nav-svg-icon {
+  stroke: var(--accent-solar);
+  filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.7));
+}
+
+.mobile-nav-item.active-motors.active .nav-svg-icon {
+  stroke: var(--accent-motors);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.7));
+}
+
+.mobile-nav-item.active-engineering.active .nav-svg-icon {
+  stroke: var(--accent-mew);
+  filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.7));
+}
+
+.mobile-nav-item.active-about.active .nav-svg-icon {
+  stroke: #a78bfa; /* Soft luxury purple */
+  filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.7));
+}
+
+/* Glowing Indicator Dots under Active Icons */
+.glow-indicator {
+  position: absolute;
+  bottom: -6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--text-primary);
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mobile-nav-item.active .glow-indicator {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.mobile-nav-item.active-home.active .glow-indicator {
+  background: #ffffff;
+  box-shadow: 0 0 8px #ffffff;
+}
+
+.mobile-nav-item.active-solar.active .glow-indicator {
+  background: var(--accent-solar);
+  box-shadow: 0 0 10px var(--accent-solar);
+}
+
+.mobile-nav-item.active-motors.active .glow-indicator {
+  background: var(--accent-motors);
+  box-shadow: 0 0 10px var(--accent-motors);
+}
+
+.mobile-nav-item.active-engineering.active .glow-indicator {
+  background: var(--accent-mew);
+  box-shadow: 0 0 10px var(--accent-mew);
+}
+
+.mobile-nav-item.active-about.active .glow-indicator {
+  background: #a78bfa;
+  box-shadow: 0 0 10px #a78bfa;
+}
+
+/* Responsive Media Query Breakpoints */
+@media (max-width: 900px) {
+  .mobile-bottom-nav-container {
+    display: flex; /* Enable bottom navbar on tablets and mobile screens */
+  }
+}

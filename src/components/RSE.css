@@ -1,0 +1,638 @@
+.rse-snap-section {
+  background-color: var(--bg-deep-space);
+}
+
+.rse-expanded-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.specs-details-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Visual Column Frame */
+.brand-visual-column {
+  padding: 1.5rem;
+  border-color: var(--border-slate);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.visual-image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 280px;
+  border: 1px solid var(--border-slate);
+}
+
+.visual-showcase-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-luxury);
+}
+
+.brand-visual-column:hover .visual-showcase-image {
+  transform: scale(1.05);
+}
+
+.visual-overlay-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 40%, rgba(11, 15, 25, 0.9));
+  pointer-events: none;
+}
+
+.visual-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--accent-solar);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.visual-meta-box h4 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.visual-meta-box p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.visual-stats-row {
+  display: flex;
+  gap: 2rem;
+  border-top: 1px solid var(--border-slate);
+  padding-top: 1.25rem;
+}
+
+.v-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.v-stat span:nth-child(1) {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.v-stat span:nth-child(2) {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent-solar);
+}
+
+@media (max-width: 1024px) {
+  .rse-expanded-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .visual-image-wrapper {
+    height: 220px;
+  }
+}
+
+/* Bento Card Relative Overlays and Backgrounds */
+.bento-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-card-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.12; /* Subtle blending to preserve visual hierarchy and text contrast */
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  z-index: 0;
+  filter: grayscale(20%);
+}
+
+.bento-card:hover .bento-card-bg-image {
+  transform: scale(1.08);
+  opacity: 0.2;
+}
+
+.bento-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ==========================================
+   Premium Solar Products Showcase Gallery
+   ========================================== */
+.solar-showcase-wrapper {
+  margin-top: 5rem;
+}
+
+.solar-showcase-wrapper .section-heading-block.text-center {
+  text-align: center;
+}
+
+.showcase-meta-para {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.showcase-rows-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Row Grid Layouts */
+.showcase-row {
+  display: grid;
+  gap: 2rem;
+}
+
+.showcase-row.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.showcase-row.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Product Showcase Card */
+.product-showcase-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--border-slate);
+  background: var(--glass-surface);
+  backdrop-filter: blur(20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-showcase-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(245, 158, 11, 0.35);
+  box-shadow: 0 20px 50px -10px rgba(245, 158, 11, 0.12),
+              0 0 0 1px rgba(245, 158, 11, 0.1);
+}
+
+/* Product Image */
+.product-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.showcase-row.grid-2 .product-image-wrapper {
+  height: 280px;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-showcase-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+.product-badge {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  background: rgba(245, 158, 11, 0.12);
+  color: var(--accent-solar);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 0.3rem 0.65rem;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+/* Product Info */
+.product-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: var(--text-primary);
+}
+
+.product-info p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Highlighted (wider) product cards in 1*2 row */
+.highlighted-product .product-info {
+  padding: 1.75rem;
+}
+
+.highlighted-product .product-info h3 {
+  font-size: 1.25rem;
+}
+
+.highlighted-product .product-info p {
+  font-size: 0.9rem;
+}
+
+/* Showcase Responsive */
+@media (max-width: 1024px) {
+  .showcase-row.grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .showcase-row.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .showcase-row.grid-3 > .product-showcase-card:last-child {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .solar-showcase-wrapper {
+    margin-top: 4rem;
+  }
+
+  .showcase-rows-container {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .showcase-row.grid-3 {
+    grid-template-columns: repeat(3, 1fr); /* Keep 1*3 on mobile */
+    gap: 0.75rem;
+  }
+
+  .showcase-row.grid-2 {
+    grid-template-columns: repeat(2, 1fr); /* Keep 1*2 on mobile */
+    gap: 0.75rem;
+  }
+
+  .product-image-wrapper {
+    height: 130px;
+  }
+
+  .showcase-row.grid-2 .product-image-wrapper {
+    height: 160px;
+  }
+
+  .product-info {
+    padding: 0.85rem;
+    gap: 0.35rem;
+  }
+
+  .product-info h3 {
+    font-size: 0.8rem;
+  }
+
+  .product-info p {
+    font-size: 0.65rem;
+    line-height: 1.4;
+  }
+
+  .product-badge {
+    font-size: 0.45rem;
+    padding: 0.2rem 0.4rem;
+    letter-spacing: 0.8px;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .highlighted-product .product-info {
+    padding: 0.85rem;
+  }
+
+  .highlighted-product .product-info h3 {
+    font-size: 0.85rem;
+  }
+
+  .highlighted-product .product-info p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .showcase-row.grid-3 {
+    grid-template-columns: repeat(3, 1fr); /* Enforce 1*3 on tiny screens */
+    gap: 0.5rem;
+  }
+
+  .showcase-row.grid-2 {
+    grid-template-columns: repeat(2, 1fr); /* Enforce 1*2 on tiny screens */
+    gap: 0.5rem;
+  }
+
+  .product-image-wrapper {
+    height: 100px;
+  }
+
+  .showcase-row.grid-2 .product-image-wrapper {
+    height: 140px;
+  }
+
+  .product-info {
+    padding: 0.65rem;
+    gap: 0.25rem;
+  }
+
+  .product-info h3 {
+    font-size: 0.7rem;
+  }
+
+  .product-info p {
+    font-size: 0.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .product-badge {
+    font-size: 0.4rem;
+    padding: 0.15rem 0.3rem;
+    letter-spacing: 0.6px;
+    top: 0.35rem;
+    left: 0.35rem;
+    border-radius: 3px;
+  }
+
+  .highlighted-product .product-info h3 {
+    font-size: 0.75rem;
+  }
+
+  .highlighted-product .product-info p {
+    font-size: 0.6rem;
+  }
+}
+
+/* ==========================================
+   RSE & MFins About Us Section
+   ========================================== */
+.solar-about-wrapper {
+  margin-top: 5rem;
+  padding: 3.5rem 3rem;
+  background: linear-gradient(145deg, rgba(22, 163, 74, 0.06), rgba(22, 163, 74, 0.02));
+  border: 1px solid rgba(22, 163, 74, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+}
+
+/* Green Slash Badge */
+.slash-badge-container {
+  margin-bottom: 1.5rem;
+}
+
+.green-slash-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: #ffffff;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  padding: 0.6rem 1.75rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(22, 163, 74, 0.3);
+}
+
+/* Partnership Statement */
+.about-brand-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.partnership-statement {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* 7 Services Icon Grid */
+.services-7-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1.25rem;
+}
+
+/* Service Icon Card */
+.service-icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--border-slate);
+  background: var(--glass-surface);
+  backdrop-filter: blur(16px);
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-icon-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(22, 163, 74, 0.4);
+  box-shadow: 0 12px 30px -8px rgba(22, 163, 74, 0.15),
+              0 0 0 1px rgba(22, 163, 74, 0.1);
+}
+
+/* Circle Badge (13+ Years) */
+.service-icon-circle-badge {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid rgba(22, 163, 74, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: rgba(22, 163, 74, 0.08);
+  transition: all 0.4s ease;
+}
+
+.service-icon-card:hover .service-icon-circle-badge {
+  border-color: rgba(22, 163, 74, 0.7);
+  background: rgba(22, 163, 74, 0.15);
+  box-shadow: 0 0 20px rgba(22, 163, 74, 0.2);
+}
+
+.years-bold {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #16a34a;
+  line-height: 1;
+}
+
+.years-small {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #16a34a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+/* SVG Icon Wrappers */
+.service-svg-wrapper {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all 0.4s ease;
+}
+
+.service-svg-wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+.service-icon-card:hover .service-svg-wrapper {
+  color: #16a34a;
+  filter: drop-shadow(0 0 6px rgba(22, 163, 74, 0.35));
+}
+
+.service-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.service-icon-card:hover .service-title {
+  color: var(--text-primary);
+}
+
+/* About Us Section Responsive */
+@media (max-width: 1200px) {
+  .services-7-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .solar-about-wrapper {
+    margin-top: 4rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .services-7-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .green-slash-badge {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .partnership-statement {
+    font-size: 0.95rem;
+  }
+
+  .service-icon-card {
+    padding: 1.5rem 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .service-svg-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-icon-circle-badge {
+    width: 52px;
+    height: 52px;
+  }
+
+  .years-bold {
+    font-size: 1rem;
+  }
+
+  .service-title {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .solar-about-wrapper {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  .services-7-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .services-7-grid > .service-icon-card:last-child {
+    grid-column: span 2;
+  }
+
+  .about-brand-header {
+    margin-bottom: 2rem;
+  }
+
+  .partnership-statement {
+    font-size: 0.85rem;
+  }
+}
