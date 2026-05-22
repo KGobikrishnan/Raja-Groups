@@ -437,7 +437,7 @@ const Hero = ({ navigateToPage }) => {
             <ScrollReveal delay={300} className="impact-card luxury-glass hover-scale">
               <div className="impact-card-image-wrapper">
                 <img 
-                  src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=600" 
+                  src="/motors_bg_1779278176265.png" 
                   alt="EV Integration Networks" 
                   className="impact-card-img" 
                 />

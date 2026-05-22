@@ -57,8 +57,8 @@ const RMA = () => {
                     <span>Fluid Power Series — solar PMBLDC pumping systems with dry-run protection</span>
                   </div>
                 </div>
-              </ScrollReveal>
-            </div>
+              </div>
+            </ScrollReveal>
 
             {/* Spec Card B2: Industrial & Domestic Pumps */}
             <ScrollReveal delay={150} className="bento-card luxury-glass glow-cyan">
@@ -85,8 +85,8 @@ const RMA = () => {
                     <span>Heavy-duty industrial drainage and waste water treatment pump systems</span>
                   </div>
                 </div>
-              </ScrollReveal>
-            </div>
+              </div>
+            </ScrollReveal>
 
           </div>
 
@@ -112,8 +112,8 @@ const RMA = () => {
                   <span>Sales · Spares</span>
                 </div>
               </div>
-            </ScrollReveal>
-          </div>
+            </div>
+          </ScrollReveal>
 
         </div>
 
@@ -227,8 +227,8 @@ const RMA = () => {
                 </div>
               </div>
             </div>
-          </ScrollReveal>
-        </div>
+          </div>
+        </ScrollReveal>
 
         {/* Brand Partners Strip */}
         <div className="motors-brand-partners">
