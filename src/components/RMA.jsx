@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from './Icon';
+import ScrollReveal from './ScrollReveal';
 import './RMA.css';
 
 const RMA = () => {
@@ -7,7 +8,7 @@ const RMA = () => {
     <section id="rma" className="rma-snap-section">
       <img src="/motors_bg_1779278176265.png" alt="Motors BG" className="section-bg-image" />
       
-      <div className="section-content-wrapper view-fade">
+      <div className="section-content-wrapper">
         
         <div className="section-heading-block">
           <div className="brand-header-meta">
@@ -25,7 +26,7 @@ const RMA = () => {
           <div className="specs-details-column">
             
             {/* Spec Card B1: Submersible & Borewell Pumps */}
-            <div className="bento-card luxury-glass glow-cyan">
+            <ScrollReveal delay={0} className="bento-card luxury-glass glow-cyan">
               <div className="bento-card-bg-image" style={{ backgroundImage: 'url(https://oswalpumps.com/images/product/stainless-v4-1.jpg)' }}></div>
               <div className="bento-card-content">
                 <div className="ev-flex-header-row">
@@ -56,11 +57,11 @@ const RMA = () => {
                     <span>Fluid Power Series — solar PMBLDC pumping systems with dry-run protection</span>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
 
             {/* Spec Card B2: Industrial & Domestic Pumps */}
-            <div className="bento-card luxury-glass glow-cyan">
+            <ScrollReveal delay={150} className="bento-card luxury-glass glow-cyan">
               <div className="bento-card-bg-image" style={{ backgroundImage: 'url(https://www.chitkara.edu.in/blogs/wp-content/uploads/2023/04/Mechanical_Engineers_Work-3.jpg)' }}></div>
               <div className="bento-card-content">
                 <div className="bento-card-icon"><Icon name="factory" size={32} /></div>
@@ -84,13 +85,13 @@ const RMA = () => {
                     <span>Heavy-duty industrial drainage and waste water treatment pump systems</span>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
 
           </div>
 
           {/* Right Split: Brand Image & Motors Section */}
-          <div className="brand-visual-column luxury-glass glow-cyan">
+          <ScrollReveal delay={300} className="brand-visual-column luxury-glass glow-cyan">
             <div className="visual-image-wrapper">
               <img src="https://oswalpumps.com/images/product/stainless-v4-1.jpg" alt="KSB Submersible Pump Systems" className="visual-showcase-image" />
               <div className="visual-overlay-gradient"></div>
@@ -111,7 +112,7 @@ const RMA = () => {
                   <span>Sales · Spares</span>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
 
         </div>
@@ -127,71 +128,71 @@ const RMA = () => {
           <div className="motors-products-grid">
 
             {/* Product Categories */}
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={0} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="droplet" size={28} /></div>
               <h3>S.G./C.I./PP Submersible</h3>
               <p>Openwell & Monoblock Pumps</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={50} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="refreshCw" size={28} /></div>
               <h3>Vertical In-Line Pumps</h3>
               <p>High-pressure turbine systems</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={100} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="arrowUp" size={28} /></div>
               <h3>Horizontal Boosters</h3>
               <p>Multi-stage pressure boosters</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={150} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="faucet" size={28} /></div>
               <h3>Drinking Water Pumps</h3>
               <p>Food-grade stainless steel</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={200} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="home" size={28} /></div>
               <h3>Domestic Waste Water</h3>
               <p>Soiled water handling pumps</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={250} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="building" size={28} /></div>
               <h3>Industrial Drainage</h3>
               <p>Heavy-duty waste water pumps</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={300} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="sun" size={28} /></div>
               <h3>Solar Powered Pumps</h3>
               <p>Fluid Power Series</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={350} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="waves" size={28} /></div>
               <h3>Sewage & Slurry Pumps</h3>
               <p>Household sewage handling</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={400} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="pickaxe" size={28} /></div>
               <h3>Borewell Compressors</h3>
               <p>Agricultural deep-well extraction</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="motor-product-card luxury-glass glow-cyan">
+            <ScrollReveal delay={450} className="motor-product-card luxury-glass glow-cyan">
               <div className="motor-product-icon"><Icon name="gear" size={28} /></div>
               <h3>Electric Motors</h3>
               <p>Agri & industrial copper wound</p>
-            </div>
+            </ScrollReveal>
 
           </div>
         </div>
 
         {/* Borewell Scanning Camera Highlight */}
-        <div className="borewell-camera-highlight luxury-glass glow-cyan">
+        <ScrollReveal className="borewell-camera-highlight luxury-glass glow-cyan">
           <div className="borewell-camera-image-col">
             <div className="borewell-img-wrapper">
               <img src="https://5.imimg.com/data5/ANDROID/Default/2024/1/382097928/PQ/FI/OJ/4369384/product-jpeg.jpeg" alt="Borewell Scanning Camera" className="borewell-camera-img" />
@@ -226,7 +227,7 @@ const RMA = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
 
         {/* Brand Partners Strip */}
@@ -238,22 +239,22 @@ const RMA = () => {
           </div>
 
           <div className="motors-partners-grid">
-            <div className="motor-partner-tile luxury-glass glow-cyan">
+            <ScrollReveal delay={0} className="motor-partner-tile luxury-glass glow-cyan">
               <img src="https://images.seeklogo.com/logo-png/30/2/ashirvad-logo-png_seeklogo-305072.png" alt="Ashirvad Pipes" className="partner-logo-img" />
               <span>Ashirvad Pipe</span>
-            </div>
-            <div className="motor-partner-tile luxury-glass glow-cyan">
+            </ScrollReveal>
+            <ScrollReveal delay={100} className="motor-partner-tile luxury-glass glow-cyan">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/KSB_SVG.svg/3840px-KSB_SVG.svg.png" alt="KSB Pumps" className="partner-logo-img" />
               <span>KSB Cable</span>
-            </div>
-            <div className="motor-partner-tile luxury-glass glow-cyan">
+            </ScrollReveal>
+            <ScrollReveal delay={200} className="motor-partner-tile luxury-glass glow-cyan">
               <img src="https://meeco.com/meeco/wp-content/themes/mecco/images/logo.png" alt="Meeco Panel" className="partner-logo-img" />
               <span>Meeco Panel</span>
-            </div>
-            <div className="motor-partner-tile luxury-glass glow-cyan">
+            </ScrollReveal>
+            <ScrollReveal delay={300} className="motor-partner-tile luxury-glass glow-cyan">
               <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/L%26T.png" alt="L&T Panel" className="partner-logo-img" />
               <span>L&T Panel</span>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
 

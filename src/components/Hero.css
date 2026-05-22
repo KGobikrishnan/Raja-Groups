@@ -101,7 +101,7 @@
   line-height: 1.1;
   margin: 1.5rem 0 0.75rem;
   letter-spacing: -1.5px;
-  background: linear-gradient(135deg, #ffffff 0%, var(--accent-solar) 100%);
+  background: linear-gradient(135deg, #0f172a 0%, var(--accent-solar) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -285,7 +285,7 @@
 .slide-cta-link-btn {
   margin-top: 1.5rem;
   padding: 10px 24px;
-  background: linear-gradient(135deg, var(--border-slate) 0%, rgba(15, 23, 42, 0.6) 100%);
+  background: linear-gradient(135deg, var(--border-slate) 0%, rgba(248, 250, 252, 0.9) 100%);
   border: 1px solid var(--border-slate);
   color: var(--text-primary);
   border-radius: 8px;
@@ -356,7 +356,7 @@
 
 .div-icon {
   font-size: 1.75rem;
-  background: rgba(30, 41, 59, 0.4);
+  background: rgba(241, 245, 249, 0.8);
   border: 1px solid var(--border-slate);
   width: 48px;
   height: 48px;
@@ -451,7 +451,7 @@
   font-weight: 800;
   letter-spacing: 0.5px;
   border: 1px solid var(--border-slate);
-  background: rgba(15, 23, 42, 0.5);
+  background: rgba(241, 245, 249, 0.8);
   color: var(--text-primary);
   cursor: pointer;
   transition: var(--transition-luxury);
@@ -634,7 +634,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(30, 41, 59, 0.4);
+  background: rgba(241, 245, 249, 0.8);
   border: 1px solid var(--border-slate);
   transition: var(--transition-luxury);
 }

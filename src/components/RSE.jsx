@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from './Icon';
+import ScrollReveal from './ScrollReveal';
 import './RSE.css';
 
 const RSE = () => {
@@ -7,7 +8,7 @@ const RSE = () => {
     <section id="rse" className="rse-snap-section">
       <img src="/solar_bg_1779278192603.png" alt="Solar BG" className="section-bg-image" />
       
-      <div className="section-content-wrapper view-fade">
+      <div className="section-content-wrapper">
         
         <div className="section-heading-block">
           <div className="brand-header-meta">
@@ -24,7 +25,7 @@ const RSE = () => {
           <div className="specs-details-column">
             
             {/* Spec Card A1: Generation Grid */}
-            <div className="bento-card luxury-glass glow-solar">
+            <ScrollReveal delay={0} className="bento-card luxury-glass glow-solar">
               <div className="bento-card-bg-image" style={{ backgroundImage: 'url(https://frontend-cdn.solarreviews.com/solar-clay-tile-roof-installation.jpg)' }}></div>
               <div className="bento-card-content">
                 <div className="bento-card-icon"><Icon name="bolt" size={32} /></div>
@@ -49,10 +50,10 @@ const RSE = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Spec Card A2: Lighting & Telemetry */}
-            <div className="bento-card luxury-glass glow-solar">
+            <ScrollReveal delay={150} className="bento-card luxury-glass glow-solar">
               <div className="bento-card-bg-image" style={{ backgroundImage: 'url(https://www.canadianminingjournal.com/wp-content/uploads/2026/03/EWS_Monitoring_Wellcap3.0-1024x768.jpg)' }}></div>
               <div className="bento-card-content">
                 <div className="bento-card-icon"><Icon name="lightbulb" size={32} /></div>
@@ -77,12 +78,12 @@ const RSE = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
 
           </div>
 
           {/* Right Split: Large High-Contrast Brand Image Section */}
-          <div className="brand-visual-column luxury-glass glow-solar">
+          <ScrollReveal delay={300} className="brand-visual-column luxury-glass glow-solar">
             <div className="visual-image-wrapper">
               <img src="/solar_bg_1779278192603.png" alt="RSE Solar Infrastructure" className="visual-showcase-image" />
               <div className="visual-overlay-gradient"></div>
@@ -104,7 +105,7 @@ const RSE = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
         </div>
 
@@ -123,7 +124,7 @@ const RSE = () => {
             <div className="showcase-row grid-3">
               
               {/* Item 1: Solar Bollards */}
-              <div className="product-showcase-card luxury-glass glow-solar">
+              <ScrollReveal delay={0} className="product-showcase-card luxury-glass glow-solar">
                 <div className="product-image-wrapper">
                   <img src="https://5.imimg.com/data5/SELLER/Default/2024/3/405879608/MD/FC/TV/152656222/solar-bollard-lights.jpg" alt="Solar Bollard Lights" className="product-img" />
                   <div className="product-badge">ESTATE LIGHTING</div>
@@ -132,10 +133,10 @@ const RSE = () => {
                   <h3>Solar Bollard Lights</h3>
                   <p>Extruded anodized aluminum columns providing dusk-to-dawn pathway illumination.</p>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Item 2: Solar Gate Light */}
-              <div className="product-showcase-card luxury-glass glow-solar">
+              <ScrollReveal delay={100} className="product-showcase-card luxury-glass glow-solar">
                 <div className="product-image-wrapper">
                   <img src="https://inventaa.in/cdn/shop/files/BloomCool_6b4fc9f6-0d17-48bb-bc88-45e4b3afc71f.jpg?v=1771914882&width=2408" alt="Solar Gate Light" className="product-img" />
                    <div className="product-badge">SMART ENTRY</div>
@@ -144,10 +145,10 @@ const RSE = () => {
                   <h3>Solar Gate Light</h3>
                   <p>Elegant blooming floral globe design delivering auto-sensing perimeter security.</p>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Item 3: Solar Flame LED Light */}
-              <div className="product-showcase-card luxury-glass glow-solar">
+              <ScrollReveal delay={200} className="product-showcase-card luxury-glass glow-solar">
                 <div className="product-image-wrapper">
                   <img src="https://5.imimg.com/data5/ECOM/Default/2024/7/435894239/WL/FJ/BR/107578888/1714010699548-500x500.png" alt="Solar Flame LED Light" className="product-img" />
                   <div className="product-badge">AMBIENT TORCH</div>
@@ -156,7 +157,7 @@ const RSE = () => {
                   <h3>Solar Flame LED Light</h3>
                   <p>Weatherproof dynamic flicker-effect flame lanterns for pathways and landscaping.</p>
                 </div>
-              </div>
+              </ScrollReveal>
 
             </div>
 
@@ -164,7 +165,7 @@ const RSE = () => {
             <div className="showcase-row grid-2">
               
               {/* Item 4: Solar Street Light */}
-              <div className="product-showcase-card luxury-glass glow-solar highlighted-product">
+              <ScrollReveal delay={0} className="product-showcase-card luxury-glass glow-solar highlighted-product">
                 <div className="product-image-wrapper">
                   <img src="https://utkarshindia.in/assets/upload/product-image/f378347fd90fdf1896582eea7f36ab62.webp" alt="Solar Street Light" className="product-img" />
                   <div className="product-badge">HIGH-LUMEN HIGHWAY</div>
@@ -173,10 +174,10 @@ const RSE = () => {
                   <h3>Solar Street Light</h3>
                   <p>Industrial-grade radar-sensing street lighting system, engineered with high-efficiency PV arrays and lithium cells for highways, avenues, and factories.</p>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Item 5: Solar EV Charger */}
-              <div className="product-showcase-card luxury-glass glow-solar highlighted-product">
+              <ScrollReveal delay={150} className="product-showcase-card luxury-glass glow-solar highlighted-product">
                 <div className="product-image-wrapper">
                   <img src="https://cdn.prod.website-files.com/63053218ec1dde0a99cc4fee/66bb45f7ad7e0b19b50c7a07_Cost%20and%20Benefits%20of%20Solar-Powered%20EV%20Charging%20Stations.jpg" alt="Solar EV Charger" className="product-img" />
                   <div className="product-badge">GREEN MOBILITY</div>
@@ -185,7 +186,7 @@ const RSE = () => {
                   <h3>Solar EV Charging Station</h3>
                   <p>Next-generation grid-independent solar canopy charger, delivering rapid green vehicle power through optimized smart dual-charging ports.</p>
                 </div>
-              </div>
+              </ScrollReveal>
 
             </div>
 
@@ -193,7 +194,7 @@ const RSE = () => {
             <div className="showcase-row grid-3">
               
               {/* Item 6: Solar Wall Lights */}
-              <div className="product-showcase-card luxury-glass glow-solar">
+              <ScrollReveal delay={0} className="product-showcase-card luxury-glass glow-solar">
                 <div className="product-image-wrapper">
                   <img src="https://inventaa.in/cdn/shop/files/Figo_AD_FI.jpg?v=1765270884&width=2048" alt="Solar Wall Lights" className="product-img" />
                   <div className="product-badge">WALL SCONCES</div>
@@ -202,10 +203,10 @@ const RSE = () => {
                   <h3>Solar Wall Lights</h3>
                   <p>Multi-directional outdoor architectural wall fixtures with integrated PV cells.</p>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Item 7: Solar Camera */}
-              <div className="product-showcase-card luxury-glass glow-solar">
+              <ScrollReveal delay={100} className="product-showcase-card luxury-glass glow-solar">
                 <div className="product-image-wrapper">
                   <img src="https://www.maizic.com/cdn/shop/files/1_7edd40bc-b76f-4196-9fa8-a776dd220831_1200x.jpg?v=1712231860" alt="Solar Camera" className="product-img" />
                   <div className="product-badge">TELEMETRY SECURE</div>
@@ -214,10 +215,10 @@ const RSE = () => {
                   <h3>Solar SIM CCTV Camera</h3>
                   <p>4MP Quad-HD carrier-independent cellular remote monitoring and live cloud alerts.</p>
                 </div>
-              </div>
+              </ScrollReveal>
 
               {/* Item 8: Solar Sensor Light */}
-              <div className="product-showcase-card luxury-glass glow-solar">
+              <ScrollReveal delay={200} className="product-showcase-card luxury-glass glow-solar">
                 <div className="product-image-wrapper">
                   <img src="https://cdn.dotpe.in/longtail/store-items/7909358/EPJMFzNw.jpeg" alt="Solar Sensor Light" className="product-img" />
                   <div className="product-badge">RADAR DETECTION</div>
@@ -226,7 +227,7 @@ const RSE = () => {
                   <h3>Solar Sensor Security Light</h3>
                   <p>Durable radar-triggered floodlights with high-capacity battery units.</p>
                 </div>
-              </div>
+              </ScrollReveal>
 
             </div>
 
@@ -249,16 +250,16 @@ const RSE = () => {
           <div className="services-7-grid">
             
             {/* Service 1: Business Experience */}
-            <div className="service-icon-card luxury-glass glow-solar">
+            <ScrollReveal delay={0} className="service-icon-card luxury-glass glow-solar">
               <div className="service-icon-circle-badge">
                 <span className="years-bold">13+</span>
                 <span className="years-small">Years</span>
               </div>
               <span className="service-title">Business Experience</span>
-            </div>
+            </ScrollReveal>
 
             {/* Service 2: Design & Engineering */}
-            <div className="service-icon-card luxury-glass glow-solar">
+            <ScrollReveal delay={50} className="service-icon-card luxury-glass glow-solar">
               <div className="service-svg-wrapper">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 20h9" />
@@ -266,10 +267,10 @@ const RSE = () => {
                 </svg>
               </div>
               <span className="service-title">Design & Engineering</span>
-            </div>
+            </ScrollReveal>
 
             {/* Service 3: Project Management */}
-            <div className="service-icon-card luxury-glass glow-solar">
+            <ScrollReveal delay={100} className="service-icon-card luxury-glass glow-solar">
               <div className="service-svg-wrapper">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -279,10 +280,10 @@ const RSE = () => {
                 </svg>
               </div>
               <span className="service-title">Project Management</span>
-            </div>
+            </ScrollReveal>
 
             {/* Service 4: Erection & Commissioning */}
-            <div className="service-icon-card luxury-glass glow-solar">
+            <ScrollReveal delay={150} className="service-icon-card luxury-glass glow-solar">
               <div className="service-svg-wrapper">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="11" width="18" height="10" rx="2" />
@@ -292,10 +293,10 @@ const RSE = () => {
                 </svg>
               </div>
               <span className="service-title">Erection & Commissioning</span>
-            </div>
+            </ScrollReveal>
 
             {/* Service 5: Supply of Materials */}
-            <div className="service-icon-card luxury-glass glow-solar">
+            <ScrollReveal delay={200} className="service-icon-card luxury-glass glow-solar">
               <div className="service-svg-wrapper">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="9" cy="21" r="1" />
@@ -304,20 +305,20 @@ const RSE = () => {
                 </svg>
               </div>
               <span className="service-title">Supply of Materials</span>
-            </div>
+            </ScrollReveal>
 
             {/* Service 6: Operation & Maintenance */}
-            <div className="service-icon-card luxury-glass glow-solar">
+            <ScrollReveal delay={250} className="service-icon-card luxury-glass glow-solar">
               <div className="service-svg-wrapper">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
                 </svg>
               </div>
               <span className="service-title">Operation & Maintenance</span>
-            </div>
+            </ScrollReveal>
 
             {/* Service 7: Monitoring System */}
-            <div className="service-icon-card luxury-glass glow-solar">
+            <ScrollReveal delay={300} className="service-icon-card luxury-glass glow-solar">
               <div className="service-svg-wrapper">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
@@ -328,7 +329,7 @@ const RSE = () => {
                 </svg>
               </div>
               <span className="service-title">Monitoring System</span>
-            </div>
+            </ScrollReveal>
 
           </div>
 

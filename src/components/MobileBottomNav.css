@@ -21,11 +21,11 @@
   padding: 0 0.75rem;
   border-radius: 20px;
   pointer-events: auto; /* Active interactions inside the bar */
-  background: rgba(11, 15, 25, 0.82) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: blur(24px) saturate(160%);
-  border: 1px solid rgba(30, 41, 59, 0.7) !important;
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 
-              0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1), 
+              0 0 0 1px rgba(255, 255, 255, 0.5) inset;
   position: relative;
   overflow: visible;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -91,8 +91,8 @@
 
 /* Specific Page Glowing Signatures */
 .mobile-nav-item.active-home.active .nav-svg-icon {
-  stroke: #ffffff;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
+  stroke: #0f172a;
+  filter: drop-shadow(0 0 6px rgba(15, 23, 42, 0.2));
 }
 
 .mobile-nav-item.active-solar.active .nav-svg-icon {
@@ -134,8 +134,8 @@
 }
 
 .mobile-nav-item.active-home.active .glow-indicator {
-  background: #ffffff;
-  box-shadow: 0 0 8px #ffffff;
+  background: #0f172a;
+  box-shadow: 0 0 8px #0f172a;
 }
 
 .mobile-nav-item.active-solar.active .glow-indicator {

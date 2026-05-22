@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Icon from './Icon';
+import ScrollReveal from './ScrollReveal';
 import './Hero.css';
 
 const Hero = ({ navigateToPage }) => {
@@ -133,7 +134,7 @@ const Hero = ({ navigateToPage }) => {
 
       {/* Corporate Core Divisions Quick Access Hub */}
       <section id="divisions-hub" className="divisions-hub-section">
-        <div className="divisions-hub-wrapper view-fade">
+        <div className="divisions-hub-wrapper">
           
           <div className="section-heading-block text-center">
             <span className="chip chip-solar"><Icon name="gear" size={14} style={{marginRight: '6px'}} /> OPERATIONAL CORE</span>
@@ -144,7 +145,7 @@ const Hero = ({ navigateToPage }) => {
           <div className="divisions-grid-container">
             
             {/* Division 1: Solar */}
-            <div className="division-hub-card luxury-glass glow-solar" onClick={() => handleGridClick('solar')}>
+            <ScrollReveal delay={0} className="division-hub-card luxury-glass glow-solar" onClick={() => handleGridClick('solar')}>
               <div className="card-bg-image" style={{ backgroundImage: 'url(https://i0.wp.com/eepowerschool.com/wp-content/uploads/2018/09/Solar-Photovoltaic-panel.jpg?fit=1600%2C1062&ssl=1)' }}></div>
               <div className="card-top-header">
                 <span className="div-icon"><Icon name="sun" size={32} /></span>
@@ -163,10 +164,10 @@ const Hero = ({ navigateToPage }) => {
                 </div>
               </div>
               <button className="div-explore-btn btn-solar">Explore Solar Energy Grid →</button>
-            </div>
+            </ScrollReveal>
 
             {/* Division 2: Motors */}
-            <div className="division-hub-card luxury-glass glow-cyan" onClick={() => handleGridClick('motors')}>
+            <ScrollReveal delay={150} className="division-hub-card luxury-glass glow-cyan" onClick={() => handleGridClick('motors')}>
               <div className="card-bg-image" style={{ backgroundImage: 'url(https://oswalpumps.com/images/product/stainless-v4-1.jpg)' }}></div>
               <div className="card-top-header">
                 <span className="div-icon"><Icon name="bolt" size={32} /></span>
@@ -185,10 +186,10 @@ const Hero = ({ navigateToPage }) => {
                 </div>
               </div>
               <button className="div-explore-btn btn-motors">Explore Motors & SS Pumps →</button>
-            </div>
+            </ScrollReveal>
 
             {/* Division 3: Engineering */}
-            <div className="division-hub-card luxury-glass glow-emerald" onClick={() => handleGridClick('engineering')}>
+            <ScrollReveal delay={300} className="division-hub-card luxury-glass glow-emerald" onClick={() => handleGridClick('engineering')}>
               <div className="card-bg-image" style={{ backgroundImage: 'url(https://www.chitkara.edu.in/blogs/wp-content/uploads/2023/04/Mechanical_Engineers_Work-3.jpg)' }}></div>
               <div className="card-top-header">
                 <span className="div-icon"><Icon name="droplet" size={32} /></span>
@@ -207,7 +208,7 @@ const Hero = ({ navigateToPage }) => {
                 </div>
               </div>
               <button className="div-explore-btn btn-mew">Explore Engineering Works →</button>
-            </div>
+            </ScrollReveal>
 
           </div>
 
@@ -216,7 +217,7 @@ const Hero = ({ navigateToPage }) => {
 
       {/* The Foundation of Our Success Section */}
       <section className="success-foundation-section">
-        <div className="success-foundation-wrapper view-fade">
+        <div className="success-foundation-wrapper">
           
           <div className="section-heading-block text-center">
             <span className="chip chip-solar"><Icon name="diamond" size={14} style={{marginRight: '6px'}} /> OUR CORE PRINCIPLES</span>
@@ -227,7 +228,7 @@ const Hero = ({ navigateToPage }) => {
           <div className="foundation-grid-container">
             
             {/* Principle 1: Team Work */}
-            <div className="foundation-card luxury-glass glow-cyan">
+            <ScrollReveal delay={0} className="foundation-card luxury-glass glow-cyan">
               <div className="foundation-icon-box">
                 <svg className="foundation-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -238,10 +239,10 @@ const Hero = ({ navigateToPage }) => {
               </div>
               <h3>Team Work</h3>
               <p>Synergizing Tamil Nadu's leading field engineers and PV telemetry technicians to build sustainable power grids.</p>
-            </div>
+            </ScrollReveal>
 
             {/* Principle 2: Quality */}
-            <div className="foundation-card luxury-glass glow-solar">
+            <ScrollReveal delay={100} className="foundation-card luxury-glass glow-solar">
               <div className="foundation-icon-box">
                 <svg className="foundation-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="8" r="7" />
@@ -250,10 +251,10 @@ const Hero = ({ navigateToPage }) => {
               </div>
               <h3>Quality Assurance</h3>
               <p>Rigorous field testing parameters conforming with premium ISO 9001:2015 and German technology standards.</p>
-            </div>
+            </ScrollReveal>
 
             {/* Principle 3: Customers */}
-            <div className="foundation-card luxury-glass glow-emerald">
+            <ScrollReveal delay={200} className="foundation-card luxury-glass glow-emerald">
               <div className="foundation-icon-box">
                 <svg className="foundation-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
@@ -263,10 +264,10 @@ const Hero = ({ navigateToPage }) => {
               </div>
               <h3>Customer Care</h3>
               <p>Empowering agricultural collectives, heavy mills, and local hubs with dedicated 24/7 technical dispatch support.</p>
-            </div>
+            </ScrollReveal>
 
             {/* Principle 4: Goals */}
-            <div className="foundation-card luxury-glass glow-cyan">
+            <ScrollReveal delay={0} className="foundation-card luxury-glass glow-cyan">
               <div className="foundation-icon-box">
                 <svg className="foundation-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
@@ -276,10 +277,10 @@ const Hero = ({ navigateToPage }) => {
               </div>
               <h3>Strategic Goals</h3>
               <p>Expanding eco-aware utility power structures, EV smart infrastructure, and robust regional hydraulics pipelines.</p>
-            </div>
+            </ScrollReveal>
 
             {/* Principle 5: Innovations */}
-            <div className="foundation-card luxury-glass glow-solar">
+            <ScrollReveal delay={100} className="foundation-card luxury-glass glow-solar">
               <div className="foundation-icon-box">
                 <svg className="foundation-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
@@ -289,10 +290,10 @@ const Hero = ({ navigateToPage }) => {
               </div>
               <h3>Innovations</h3>
               <p>Pioneering high-frequency motor vector controllers, smart telemetry CCTV panels, and clean energy storage matrices.</p>
-            </div>
+            </ScrollReveal>
 
             {/* Principle 6: Operational Trust */}
-            <div className="foundation-card luxury-glass glow-emerald">
+            <ScrollReveal delay={200} className="foundation-card luxury-glass glow-emerald">
               <div className="foundation-icon-box">
                 <svg className="foundation-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -300,7 +301,7 @@ const Hero = ({ navigateToPage }) => {
               </div>
               <h3>Operational Trust</h3>
               <p>Powering regional projects with transparent contracts, tier-1 brand warranties, and lifetime technical safety grids.</p>
-            </div>
+            </ScrollReveal>
 
           </div> {/* end of foundation-grid-container */}
 
@@ -309,7 +310,7 @@ const Hero = ({ navigateToPage }) => {
 
       {/* Our Brand Partners Section */}
       <section className="brand-partners-section">
-        <div className="brand-partners-wrapper view-fade">
+        <div className="brand-partners-wrapper">
           
           <div className="section-heading-block text-center">
             <span className="chip chip-solar"><Icon name="handshake" size={14} style={{marginRight: '6px'}} /> TRUSTED INTEGRATION</span>
@@ -322,7 +323,7 @@ const Hero = ({ navigateToPage }) => {
           <div className="partners-logos-grid">
             
             {/* Ashirvad Pipes */}
-            <div className="partner-logo-box luxury-glass glow-solar">
+            <ScrollReveal delay={0} className="partner-logo-box luxury-glass glow-solar">
               <div className="logo-img-wrapper">
                 <img 
                   src="https://images.seeklogo.com/logo-png/30/2/ashirvad-logo-png_seeklogo-305072.png" 
@@ -332,10 +333,10 @@ const Hero = ({ navigateToPage }) => {
                 />
               </div>
               <span className="partner-label">Ashirvad Pipes</span>
-            </div>
+            </ScrollReveal>
 
             {/* KSB */}
-            <div className="partner-logo-box luxury-glass glow-cyan">
+            <ScrollReveal delay={100} className="partner-logo-box luxury-glass glow-cyan">
               <div className="logo-img-wrapper">
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/KSB_SVG.svg/3840px-KSB_SVG.svg.png" 
@@ -345,10 +346,10 @@ const Hero = ({ navigateToPage }) => {
                 />
               </div>
               <span className="partner-label">KSB Pumps</span>
-            </div>
+            </ScrollReveal>
 
             {/* L&T */}
-            <div className="partner-logo-box luxury-glass glow-emerald">
+            <ScrollReveal delay={200} className="partner-logo-box luxury-glass glow-emerald">
               <div className="logo-img-wrapper">
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/e/e5/L%26T.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" 
@@ -358,10 +359,10 @@ const Hero = ({ navigateToPage }) => {
                 />
               </div>
               <span className="partner-label">Larsen & Toubro</span>
-            </div>
+            </ScrollReveal>
 
             {/* MEECO */}
-            <div className="partner-logo-box luxury-glass glow-cyan">
+            <ScrollReveal delay={300} className="partner-logo-box luxury-glass glow-cyan">
               <div className="logo-img-wrapper">
                 <img 
                   src="https://meeco.com/meeco/wp-content/themes/mecco/images/logo.png" 
@@ -371,7 +372,7 @@ const Hero = ({ navigateToPage }) => {
                 />
               </div>
               <span className="partner-label">MEECO Panels</span>
-            </div>
+            </ScrollReveal>
 
           </div>
 
@@ -380,7 +381,7 @@ const Hero = ({ navigateToPage }) => {
 
       {/* Our Impact Story Section */}
       <section className="impact-story-section">
-        <div className="impact-story-wrapper view-fade">
+        <div className="impact-story-wrapper">
           
           <div className="section-heading-block text-center">
             <span className="chip chip-solar"><Icon name="seedling" size={14} style={{marginRight: '6px'}} /> REVOLUTIONIZING INFRASTRUCTURE</span>
@@ -397,7 +398,7 @@ const Hero = ({ navigateToPage }) => {
           <div className="impact-grid-container">
             
             {/* Impact Card 1: Solar */}
-            <div className="impact-card luxury-glass hover-scale">
+            <ScrollReveal delay={0} className="impact-card luxury-glass hover-scale">
               <div className="impact-card-image-wrapper">
                 <img 
                   src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600" 
@@ -412,10 +413,10 @@ const Hero = ({ navigateToPage }) => {
                 <h3>Harvesting the Infinite Sun</h3>
                 <p>Deploying heavy-duty solar telemetry grids across local farming networks, offsetting carbon footprints and delivering green energy.</p>
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Impact Card 2: Motors & Hydraulics */}
-            <div className="impact-card luxury-glass hover-scale">
+            <ScrollReveal delay={150} className="impact-card luxury-glass hover-scale">
               <div className="impact-card-image-wrapper">
                 <img 
                   src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600" 
@@ -430,10 +431,10 @@ const Hero = ({ navigateToPage }) => {
                 <h3>Fluidizing Rural Operations</h3>
                 <p>Automating agricultural deep-well KSB pump logistics and smart INVT speed converters, reducing utility power costs by 35%.</p>
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Impact Card 3: EV Smart Mobility */}
-            <div className="impact-card luxury-glass hover-scale">
+            <ScrollReveal delay={300} className="impact-card luxury-glass hover-scale">
               <div className="impact-card-image-wrapper">
                 <img 
                   src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=600" 
@@ -447,10 +448,10 @@ const Hero = ({ navigateToPage }) => {
                 <h3>Fueling National Progress</h3>
                 <p>Accelerating eco-conscious logistics and smart municipal corridors with Fins OCPP EV charging station integration.</p>
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Impact Card 4: Rural Prosperity */}
-            <div className="impact-card luxury-glass hover-scale">
+            <ScrollReveal delay={450} className="impact-card luxury-glass hover-scale">
               <div className="impact-card-image-wrapper">
                 <img 
                   src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=600&q=80" 
@@ -464,7 +465,7 @@ const Hero = ({ navigateToPage }) => {
                 <h3>Prosperity in Every Field</h3>
                 <p>Electrifying 5,000+ deep agricultural tracts, bringing modern automated solar borewell hydraulics to regional farming families.</p>
               </div>
-            </div>
+            </ScrollReveal>
 
           </div>
 

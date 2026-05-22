@@ -1,5 +1,6 @@
 import React from 'react';
 import Icon from './Icon';
+import ScrollReveal from './ScrollReveal';
 import './MEW.css';
 
 const MEW = () => {
@@ -7,7 +8,7 @@ const MEW = () => {
     <section id="mew" className="mew-snap-section">
       <img src="/marichamy_bg_1779278160700.png" alt="Marichamy BG" className="section-bg-image" />
       
-      <div className="section-content-wrapper view-fade">
+      <div className="section-content-wrapper">
         
         <div className="section-heading-block">
           <div className="brand-header-meta">
@@ -25,7 +26,7 @@ const MEW = () => {
           <div className="specs-details-column">
             
             {/* Spec Card C1: Motor Rewinding & Repair */}
-            <div className="bento-card luxury-glass glow-emerald">
+            <ScrollReveal delay={0} className="bento-card luxury-glass glow-emerald">
               <div className="bento-card-bg-image" style={{ backgroundImage: 'url(https://www.chitkara.edu.in/blogs/wp-content/uploads/2023/04/Mechanical_Engineers_Work-3.jpg)' }}></div>
               <div className="bento-card-content">
                 <div className="bento-card-icon"><Icon name="bolt" size={32} /></div>
@@ -50,10 +51,10 @@ const MEW = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Spec Card C2: Pump Repair & Maintenance */}
-            <div className="bento-card luxury-glass glow-emerald">
+            <ScrollReveal delay={150} className="bento-card luxury-glass glow-emerald">
               <div className="bento-card-bg-image" style={{ backgroundImage: 'url(https://oswalpumps.com/images/product/stainless-v4-1.jpg)' }}></div>
               <div className="bento-card-content">
                 <div className="bento-card-icon"><Icon name="wrench" size={32} /></div>
@@ -78,12 +79,12 @@ const MEW = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
 
           </div>
 
           {/* Right Split: Visual Column */}
-          <div className="brand-visual-column luxury-glass glow-emerald">
+          <ScrollReveal delay={300} className="brand-visual-column luxury-glass glow-emerald">
             <div className="visual-image-wrapper">
               <img src="/marichamy_bg_1779278160700.png" alt="MEW Pump Repair Workshop" className="visual-showcase-image" />
               <div className="visual-overlay-gradient"></div>
@@ -105,7 +106,7 @@ const MEW = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
         </div>
 
@@ -119,53 +120,53 @@ const MEW = () => {
 
           <div className="mew-services-grid">
             
-            <div className="mew-service-card luxury-glass glow-emerald">
+            <ScrollReveal delay={0} className="mew-service-card luxury-glass glow-emerald">
               <div className="mew-service-icon"><Icon name="plug" size={28} /></div>
               <h3>Motor Rewinding</h3>
               <p>Complete copper rewinding for submersible and surface motors</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-service-card luxury-glass glow-emerald">
+            <ScrollReveal delay={50} className="mew-service-card luxury-glass glow-emerald">
               <div className="mew-service-icon"><Icon name="nut" size={28} /></div>
               <h3>Bearing Replacement</h3>
               <p>Precision bearing press-fit and shaft alignment services</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-service-card luxury-glass glow-emerald">
+            <ScrollReveal delay={100} className="mew-service-card luxury-glass glow-emerald">
               <div className="mew-service-icon"><Icon name="droplet" size={28} /></div>
               <h3>Pump Overhauling</h3>
               <p>Complete pump disassembly, cleaning, and reassembly</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-service-card luxury-glass glow-emerald">
+            <ScrollReveal delay={150} className="mew-service-card luxury-glass glow-emerald">
               <div className="mew-service-icon"><Icon name="wrench" size={28} /></div>
               <h3>Impeller Fitting</h3>
               <p>Sand-fighter and standard impeller replacement</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-service-card luxury-glass glow-emerald">
+            <ScrollReveal delay={200} className="mew-service-card luxury-glass glow-emerald">
               <div className="mew-service-icon"><Icon name="clipboard" size={28} /></div>
               <h3>Diagnostic Testing</h3>
               <p>Megger test, insulation check, and full-load reports</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-service-card luxury-glass glow-emerald">
+            <ScrollReveal delay={250} className="mew-service-card luxury-glass glow-emerald">
               <div className="mew-service-icon"><Icon name="building" size={28} /></div>
               <h3>Field Installation</h3>
               <p>On-site pump installation and pipeline commissioning</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-service-card luxury-glass glow-emerald">
+            <ScrollReveal delay={300} className="mew-service-card luxury-glass glow-emerald">
               <div className="mew-service-icon"><Icon name="shield" size={28} /></div>
               <h3>Seal Replacement</h3>
               <p>Mechanical seal fitting and leak-proof assembly</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-service-card luxury-glass glow-emerald">
+            <ScrollReveal delay={350} className="mew-service-card luxury-glass glow-emerald">
               <div className="mew-service-icon"><Icon name="calendar" size={28} /></div>
               <h3>AMC Contracts</h3>
               <p>Annual maintenance with scheduled preventive service</p>
-            </div>
+            </ScrollReveal>
 
           </div>
         </div>
@@ -180,37 +181,37 @@ const MEW = () => {
 
           <div className="mew-pipeline-grid">
 
-            <div className="mew-pipeline-card luxury-glass glow-emerald">
+            <ScrollReveal delay={0} className="mew-pipeline-card luxury-glass glow-emerald">
               <div className="mew-pipeline-header">
                 <span className="mew-pipeline-icon"><Icon name="link" size={24} /></span>
                 <h3>Ashirvad Column Pipes</h3>
               </div>
               <p>Schedule 80 high-tensile column PVC pipes with patented safety lock rings for deep borewell installations up to 1200ft depth.</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-pipeline-card luxury-glass glow-emerald">
+            <ScrollReveal delay={100} className="mew-pipeline-card luxury-glass glow-emerald">
               <div className="mew-pipeline-header">
                 <span className="mew-pipeline-icon"><Icon name="gear" size={24} /></span>
                 <h3>EPDM Joint Rings</h3>
               </div>
               <p>Vibration-absorbing leak-proof dynamic couplings rated up to 40 kg/cm² working pressure for zero-leak installations.</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-pipeline-card luxury-glass glow-emerald">
+            <ScrollReveal delay={200} className="mew-pipeline-card luxury-glass glow-emerald">
               <div className="mew-pipeline-header">
                 <span className="mew-pipeline-icon"><Icon name="sliders" size={24} /></span>
                 <h3>L&T MNX Switchgear</h3>
               </div>
               <p>Heavy double-door IP55 cabinets with ML/MNX dynamic overload protection switchgears for motor safety.</p>
-            </div>
+            </ScrollReveal>
 
-            <div className="mew-pipeline-card luxury-glass glow-emerald">
+            <ScrollReveal delay={300} className="mew-pipeline-card luxury-glass glow-emerald">
               <div className="mew-pipeline-header">
                 <span className="mew-pipeline-icon"><Icon name="monitor" size={24} /></span>
                 <h3>MEECO Smart Panels</h3>
               </div>
               <p>Automated dry-run sensor loops, cyclic scheduling relays, and dynamic voltage monitoring screens.</p>
-            </div>
+            </ScrollReveal>
 
           </div>
         </div>

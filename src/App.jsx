@@ -7,6 +7,7 @@ import MEW from './components/MEW';
 import AboutContact from './components/AboutContact';
 import CorporateFooter from './components/CorporateFooter';
 import MobileBottomNav from './components/MobileBottomNav';
+import AnimatedBackground from './components/AnimatedBackground';
 import './App.css';
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <AnimatedBackground />
       <Navbar currentPage={currentPage} navigateToPage={navigateToPage} />
       
       <main className="page-content-container">

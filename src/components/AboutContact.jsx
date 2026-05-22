@@ -1,11 +1,12 @@
 import React from 'react';
 import Icon from './Icon';
+import ScrollReveal from './ScrollReveal';
 import './AboutContact.css';
 
 const AboutContact = () => {
   return (
     <section id="about" className="about-snap-section">
-      <div className="about-content-wrapper view-fade">
+      <div className="about-content-wrapper">
 
         <div className="section-heading-block text-center">
           <span className="chip chip-solar"><Icon name="mapPin" size={14} style={{marginRight: '6px'}} /> Operational Grid</span>
@@ -19,7 +20,7 @@ const AboutContact = () => {
           <div className="contact-hubs-block optimized-full-width">
 
             {/* Main Branch Cumbum Only */}
-            <div className="hub-office-card luxury-glass glow-solar">
+            <ScrollReveal delay={0} className="hub-office-card luxury-glass glow-solar">
               <div className="office-header">
                 <h3>Main Branch Cumbum</h3>
                 <span className="hub-status-pill">Primary HQ</span>
@@ -33,10 +34,10 @@ const AboutContact = () => {
                 <span className="tel-node"><Icon name="phone" size={16} /> +91 81224 10091</span>
                 <span className="tel-node"><Icon name="mail" size={16} /> rajapooja1979@gmail.com</span>
               </div>
-            </div>
+            </ScrollReveal>
 
             {/* Dark Styled Google Maps Interactive Container */}
-            <div className="gmaps-mock-container luxury-glass glow-emerald">
+            <ScrollReveal delay={150} className="gmaps-mock-container luxury-glass glow-emerald">
               <div className="maps-header-row">
                 <div className="maps-title-meta">
                   <h4>Google Maps Satellite Link</h4>
@@ -64,12 +65,12 @@ const AboutContact = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-            </div>
+            </ScrollReveal>
 
           </div>
 
           {/* Business Digital ID Card (Right Column) */}
-          <div className="business-id-card luxury-glass glow-cyan">
+          <ScrollReveal delay={300} className="business-id-card luxury-glass glow-cyan">
             <div className="id-card-header">
               <div className="id-logos">
                 <img src="/Raja%20solor%20logo.jpeg" alt="RSE" />
@@ -100,7 +101,7 @@ const AboutContact = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
         </div>
       </div>
